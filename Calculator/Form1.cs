@@ -16,5 +16,12 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            string output = GetExpression(input); //Преобразовываем выражение в постфиксную запись
+            double result = Counting(output); //Решаем полученное выражение
+            return result; //Возвращаем результат
+        }
     }
 }
