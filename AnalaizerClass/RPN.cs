@@ -47,7 +47,7 @@ namespace AnalaizerClass
         //    return result; //Возвращаем результат
         //}
 
-        static private string GetExpression(string input)
+        static public string GetExpression(string input)
         {
             string output = string.Empty; //Строка для хранения выражения
             Stack<char> operStack = new Stack<char>(); //Стек для хранения операторов
@@ -109,7 +109,7 @@ namespace AnalaizerClass
             return output; //Возвращаем выражение в постфиксной записи
         }
 
-        static private double Counting(string input)
+        static public double Counting(string input)
         {
             double result = 0; //Результат
             Stack<double> temp = new Stack<double>(); //Dhtvtyysq стек для решения
