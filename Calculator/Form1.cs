@@ -19,96 +19,100 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void one_Click(object sender, EventArgs e)
+        private void one_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "1";
         }
 
-        private void two_Click(object sender, EventArgs e)
+        private void two_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "2";
         }
 
-        private void three_Click(object sender, EventArgs e)
+        private void three_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "3";
         }
 
-        private void four_Click(object sender, EventArgs e)
+        private void four_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "4";
         }
 
-        private void five_Click(object sender, EventArgs e)
+        private void five_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "5";
         }
 
-        private void six_Click(object sender, EventArgs e)
+        private void six_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "6";
         }
 
-        private void seven_Click(object sender, EventArgs e)
+        private void seven_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "7";
         }
 
-        private void eight_Click(object sender, EventArgs e)
+        private void eight_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "8";
         }
 
-        private void nine_Click(object sender, EventArgs e)
+        private void nine_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "9";
         }
 
-        private void zero_Click(object sender, EventArgs e)
+        private void zero_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "0";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "(";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += ")";
         }
 
-        private void Result_Click(object sender, EventArgs e)
+        private void Result_Click_1(object sender, EventArgs e)
         {
             string output = RPN.GetExpression(textBox1.Text); //Преобразовываем выражение в постфиксную запись
             double result = RPN.Counting(output); //Решаем полученное выражение
             textBox2.Text = result.ToString(); //Возвращаем результ
         }
 
-        private void division_Click(object sender, EventArgs e)
+        private void division_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "/";
         }
 
-        private void multiplication_Click(object sender, EventArgs e)
+        private void multiplication_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "*";
         }
 
-        private void minus_Click(object sender, EventArgs e)
+        private void minus_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "-";
         }
 
-        private void plus_Click(object sender, EventArgs e)
+        private void plus_Click_1(object sender, EventArgs e)
         {
             textBox1.Text += "+";
         }
 
-        private void deleteAll_Click(object sender, EventArgs e)
+        private void deleteAll_Click_1(object sender, EventArgs e)
         {
             textBox1.Clear();
         }
+
+     
+
+    
     }
 }
