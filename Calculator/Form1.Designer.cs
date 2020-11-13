@@ -47,7 +47,7 @@
             this.six = new System.Windows.Forms.Button();
             this.five = new System.Windows.Forms.Button();
             this.four = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.Result = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
             this.nine = new System.Windows.Forms.Button();
             this.eight = new System.Windows.Forms.Button();
@@ -120,6 +120,7 @@
             this.deleteAll.TabIndex = 8;
             this.deleteAll.Text = "C";
             this.deleteAll.UseVisualStyleBackColor = true;
+            this.deleteAll.Click += new System.EventHandler(this.deleteAll_Click);
             // 
             // deleteOne
             // 
@@ -162,6 +163,7 @@
             this.division.TabIndex = 6;
             this.division.Text = "/";
             this.division.UseVisualStyleBackColor = true;
+            this.division.Click += new System.EventHandler(this.division_Click);
             // 
             // three
             // 
@@ -225,6 +227,7 @@
             this.multiplication.TabIndex = 12;
             this.multiplication.Text = "*";
             this.multiplication.UseVisualStyleBackColor = true;
+            this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
             // 
             // six
             // 
@@ -259,15 +262,16 @@
             this.four.UseVisualStyleBackColor = true;
             this.four.Click += new System.EventHandler(this.four_Click);
             // 
-            // button15
+            // Result
             // 
-            this.button15.Location = new System.Drawing.Point(401, 394);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(73, 39);
-            this.button15.TabIndex = 16;
-            this.button15.Text = "=";
-            this.button15.UseVisualStyleBackColor = true;
+            this.Result.Location = new System.Drawing.Point(401, 394);
+            this.Result.Margin = new System.Windows.Forms.Padding(4);
+            this.Result.Name = "Result";
+            this.Result.Size = new System.Drawing.Size(73, 39);
+            this.Result.TabIndex = 16;
+            this.Result.Text = "=";
+            this.Result.UseVisualStyleBackColor = true;
+            this.Result.Click += new System.EventHandler(this.Result_Click);
             // 
             // minus
             // 
@@ -278,6 +282,7 @@
             this.minus.TabIndex = 17;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // nine
             // 
@@ -331,6 +336,7 @@
             this.plus.TabIndex = 22;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // button22
             // 
@@ -377,7 +383,7 @@
             this.Controls.Add(this.eight);
             this.Controls.Add(this.nine);
             this.Controls.Add(this.minus);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.Result);
             this.Controls.Add(this.four);
             this.Controls.Add(this.five);
             this.Controls.Add(this.six);
@@ -423,7 +429,7 @@
         private System.Windows.Forms.Button six;
         private System.Windows.Forms.Button five;
         private System.Windows.Forms.Button four;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button Result;
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button nine;
         private System.Windows.Forms.Button eight;
