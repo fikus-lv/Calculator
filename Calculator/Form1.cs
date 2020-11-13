@@ -109,6 +109,8 @@ namespace Calculator
         private void deleteAll_Click_1(object sender, EventArgs e)
         {
             textBox1.Clear();
+            textBox2.Clear();
+
         }
 
      
